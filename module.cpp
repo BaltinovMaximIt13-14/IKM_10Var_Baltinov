@@ -29,6 +29,8 @@ string perevodToHex(const string& number) {
     string FullPart = number;
     int ostatok;
 
+    if (FullPart == "0") hexResult = "0";
+    
     while (FullPart != "0") {
         // делим на 16, находим остаток и целую часть 
         FullPart = delenie16(FullPart, ostatok);
