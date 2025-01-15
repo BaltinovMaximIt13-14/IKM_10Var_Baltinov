@@ -54,7 +54,7 @@ string inputNumber() {
     string number;
     while (true) {
         cout << "Введите многозначное число (без пробелов и недопустимых символов): ";
-        cin >> number;
+        getline(cin, number);
 
         // проверка на корректность: все символы должны быть цифрами
         bool proverka = true;
